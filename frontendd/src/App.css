@@ -1,0 +1,96 @@
+/* Modern Glassmorphism & Gradient Theme */
+:root {
+  --primary: #6c63ff;
+  --secondary: #ff6584;
+  --background: linear-gradient(135deg, #e0e7ff 0%, #f8fafc 100%);
+  --glass-bg: rgba(255, 255, 255, 0.6);
+  --glass-blur: 16px;
+  --text-main: #22223b;
+  --text-light: #6c63ff;
+  --border-radius: 1.2rem;
+  --shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+  --transition: 0.3s cubic-bezier(0.4,0,0.2,1);
+}
+
+body {
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  background: var(--background);
+  color: var(--text-main);
+  min-height: 100vh;
+  margin: 0;
+  transition: background 0.5s, color 0.5s;
+}
+
+.glass {
+  background: var(--glass-bg);
+  box-shadow: var(--shadow);
+  border-radius: var(--border-radius);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  border: 1px solid rgba(255,255,255,0.3);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-main);
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+a:hover {
+  color: var(--secondary);
+}
+
+button, .btn {
+  font-family: inherit;
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  color: #fff;
+  border: none;
+  border-radius: var(--border-radius);
+  padding: 0.7em 1.5em;
+  font-size: 1rem;
+  font-weight: 600;
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  transition: background var(--transition), transform var(--transition);
+}
+button:hover, .btn:hover {
+  background: linear-gradient(90deg, var(--secondary), var(--primary));
+  transform: translateY(-2px) scale(1.03);
+}
+
+input, select, textarea {
+  border-radius: var(--border-radius);
+  border: 1px solid #e0e7ff;
+  padding: 0.6em 1em;
+  font-size: 1rem;
+  background: rgba(255,255,255,0.8);
+  box-shadow: 0 2px 8px 0 rgba(31, 38, 135, 0.05);
+  transition: border var(--transition), box-shadow var(--transition);
+}
+input:focus, select:focus, textarea:focus {
+  border: 1.5px solid var(--primary);
+  outline: none;
+  box-shadow: 0 4px 16px 0 rgba(108, 99, 255, 0.08);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background: #f8fafc;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 8px;
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: none; }
+}
