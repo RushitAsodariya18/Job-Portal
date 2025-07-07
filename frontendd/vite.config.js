@@ -10,9 +10,16 @@ export default defineConfig({
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
+<<<<<<< HEAD
     server: {
       host: '0.0.0.0',
       port: process.env.PORT || 5173
     }
+=======
+   server: {
+    allowedHosts: ['.onrender.com'],
+  },
+    
+>>>>>>> 038789bf922c10a95d13ca6df9cdd0c468a64664
   },
 })
