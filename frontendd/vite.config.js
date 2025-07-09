@@ -11,11 +11,10 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
 
- 
-   server: {
-    allowedHosts: ['.onrender.com'],
-  },
-    
+    server: {
+      host: '0.0.0.0',
+      port: process.env.PORT || 5173
+    }
 
   },
 })
