@@ -27,11 +27,13 @@ Role-based access control for recruiters and students.
 Password hashing with bcrypt.
 
 💻 Other Highlights
+
 Responsive UI designed with React for a seamless user experience.
 RESTful API built using Express.js and Node.js.
 MongoDB for storing user profiles, job listings, and applications.
 
 🛠️ Tech Stack
+
 Frontend: React.js, Axios, TailwindCSS / Bootstrap (if you used one)
 Backend: Node.js, Express.js
 Database: MongoDB (Mongoose ODM)
@@ -39,6 +41,8 @@ Authentication: JWT, bcrypt
 File Uploads: Multer (for resume uploads)
 
 📂 Project Structure
+
+
 job-portal/
 │── backend/               # Node.js + Express backend
 │   ├── models/            # Mongoose models (User, Job, Application, etc.)
