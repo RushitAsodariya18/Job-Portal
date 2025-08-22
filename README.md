@@ -14,12 +14,14 @@ Manage job applications with approve/reject capabilities.
 Access a dedicated dashboard for tracking jobs and applicants.
 
 🎓 Student Features
+
 Browse and search job listings.
 Apply for jobs with resume upload functionality.
 Track application status (Applied, Approved, Rejected).
 Access a personalized dashboard to manage applications.
 
 🔐 Authentication & Security
+
 JWT-based authentication for secure login and signup.
 Role-based access control for recruiters and students.
 Password hashing with bcrypt.
