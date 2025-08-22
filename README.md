@@ -3,9 +3,13 @@ Job Portal (MERN Stack)
 A comprehensive Job Portal application built using the MERN stack (MongoDB, Express.js, React, Node.js) that provides dual-role functionality for recruiters and students.
 
 🚀 Features
+
 👨‍💼 Recruiter Features
+
 Create and manage company profiles.
+
 Post detailed job listings with descriptions, requirements, and deadlines.
+
 Manage job applications with approve/reject capabilities.
 Access a dedicated dashboard for tracking jobs and applicants.
 
