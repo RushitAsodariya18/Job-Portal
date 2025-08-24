@@ -29,6 +29,7 @@ Password hashing with bcrypt.
 💻 Other Highlights
 
 Responsive UI designed with React for a seamless user experience.
+
 RESTful API built using Express.js and Node.js.
 MongoDB for storing user profiles, job listings, and applications.
 
